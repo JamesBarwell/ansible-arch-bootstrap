@@ -2,6 +2,11 @@
 
 Boilerplate to bootstrap and build an Arch Linux host with Ansible, driven with GNU make.
 
+## Prerequisites
+
+* ansible
+* make
+
 ## Quick start
 
 ```bash
@@ -23,11 +28,11 @@ make build
 
 ## Limit
 
-Pass a limit parameter to restrict any make command, e.g. `make bootstrap limit=webservers`.
+Pass a limit parameter to restrict any make command to a limited set of Ansible hosts, e.g. `make bootstrap limit=webservers`. This just passes the parameter through to Ansible.
 
 ## Keys
 
-The bootstrap process will create a key-pair and upload a key to your host(s), to allow frictionless use of the commands. If you do not want to use this then run `make remove-key` after the bootstap has run. A .gitignore is included to prevent keys being accidentally committed to the repository.
+The bootstrap process will create a key-pair then upload a key to your host(s), so as to allow frictionless use of the commands thereafter. If you do not want to use this then run `make remove-key` after bootstaping. A `.gitignore` is included to prevent generated keys from being accidentally committed to the repository.
 
 ## Utility commands
 
@@ -39,4 +44,4 @@ If you running Arch inside a Vagrant VM, you may need to use the paramiko connec
 
 ## License
 
-MIT - see `LICENSE` file.
+MIT - see `LICENSE` file for full terms.

@@ -1,3 +1,9 @@
+# ansible-arch-boostrap
+# (c) 2015 James Barwell, http://jamesbarwell.co.uk
+# https://github.com/JamesBarwell/ansible-arch-bootstrap
+# license MIT
+
+
 # Defaults
 
 limit = all
